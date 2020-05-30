@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>下载文件 | iLovePDF</title>
+    <meta name="description" content="下载通过iLovePDF处理好的文件，并把链接分享给他人。"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="author" content="ilovepdf.com"/>
+    <meta name="keywords" content="合并PDF文件，拆分PDF文件，合并PDF文件，提取PDF文件，压缩PDF文件，转换PDF文件，Word转换为PDF文件，Excel转换为PDF文件，Powerpoint转换为PDF文件，PDF转换为JPG图片，JPG转换为PDF文件"/>
+    <meta name="robots" content="noindex, follow">
+    <meta name="apple-itunes-app" content="app-id=1207332399">
+    <meta name="google-play-app" content="app-id=com.ilovepdf.www">
+    <link rel="apple-touch-icon" href="/img/app-icon.png">
+    <meta name="google-site-verification" content="IZueAX8T8h1eMQN3D0y8Xx7qu8-yCvtHnwn3MmpdSLo"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons-pdf/favicon-16x16.png">
+    <meta property="og:site_name" content="iLovePDF - 提供在线处理PDF文件的多种工具"/>
+    <meta property="og:title" content="下载文件 | iLovePDF"/>
+    <meta property="og:description" content="下载通过iLovePDF处理好的文件，并把链接分享给他人。"/>
+    <meta property="og:image" content="https://www.ilovepdf.com/img/ilovepdf/social/zh-Hans/ilovepdf.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.ilovepdf.com/zh-cn/download/xq46c5vc8nl8tx2rdvtb512zkz937hfr90h4f56xvk987w6ql3nkr7x83pr4z80bq1yxn5smzz7l061vjbph5A0jjfzv6kxmmpz8gcpst0tfzmAtq1qgx0hsdxn46pcc8zjqv1m7fsf4t260twxAyqmhqkws07yw53vym1n7lyhgwp41rAkq/1o"/>
+    <meta property="og:app_id" content="127502793959418"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ilovepdf_com">
+    <meta name="twitter:creator" content="@ilovepdf_com">
+    <meta name="twitter:title" content="下载文件 | iLovePDF">
+    <meta name="twitter:description" content="下载通过iLovePDF处理好的文件，并把链接分享给他人。">
+    <meta name="twitter:image:src" content="https://www.ilovepdf.com/img/ilovepdf/social/zh-Hans/ilovepdf.png"/>
+        <link rel="preload" href="/font/rawline-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/font/rawline-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/font/rawline-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/font/rawline-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<meta name="csrf-param" content="_csrf-ilovepdf">
+    <meta name="csrf-token" content="NDK9CMW1B8oHVg0gfJf3QdjqzcFnlQvKTF9j1iWZS4d4fvxmlP8y-GwMeEhPzp874buugyj3bqwNbwSwR88Y4g==">
+<link href="/dist/css/web.7e81452.css" rel="stylesheet">
+<link href="/dist/css/download.7e81452.css" rel="stylesheet"></head>
+<body class="download  lang-zh-Hans">
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-12651114-1 ', 'auto');
+    
+        ga('send', 'pageview');
+    </script><div class="header">
+    <div class="header__main">
+            <div class="social">
+        <a class="social__item social__item--twitter" href="https://twitter.com/ilovepdf_com" rel="noopener" target="_blank" title="关注" ></a>
+        <a class="social__item social__item--facebook" href="https://www.facebook.com/ilovepdfcom-238648522858564/" rel="noopener" target="_blank" title="赞"></a>
+    </div>
+        <div class="brand">
+    <div class="brand__logo">
+        <a href="/zh-cn"
+           title="iLovePDF">
+                <img src="/img/ilovepdf.svg" alt="iLovePDF">
+        </a>
+    </div>
+</div>        <div class="header__nav">
+                <div class="main-menu" id="menuBig">
+        <ul class="nav">
+            <li><a href="/zh-cn/merge_pdf">合并PDF</a></li>
+            <li><a href="/zh-cn/split_pdf">拆分 PDF</a></li>
+            <li><a href="/zh-cn/compress_pdf">压缩PDF</a></li>
+            <li class="dropdown  dropdown-full">
+                <span >PDF转换<i class="ico ico--down"></i></span>
+                <ul class="dropdown-menu mega menu-full menu-full--convert">
+                    <li>
+                        <ul>
+                            <li><div>转换为PDF文件</div></li>
+                            <li><a  href="/zh-cn/jpg_to_pdf"><i class="ico ico--jpgpdf"></i>JPG转PDF</a></li>
+                            <li><a  href="/zh-cn/word_to_pdf"><i class="ico ico--wordpdf"></i>WORD转PDF</a></li>
+                            <li><a  href="/zh-cn/powerpoint_to_pdf"><i class="ico ico--powerpointpdf"></i>PPT转PDF</a></li>
+                            <li><a  href="/zh-cn/excel_to_pdf"><i class="ico ico--excelpdf"></i>EXCEL转PDF</a></li>
+                            <li><a  href="/zh-cn/html-to-pdf"><i class="ico ico--htmlpdf"></i> HTML 转换至PDF</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><div>从 PDF转换至其他格式</div></li>
+                            <li><a  href="/zh-cn/pdf_to_jpg"><i class="ico ico--pdfjpg"></i> PDF转JPG</a></li>
+                            <li><a  href="/zh-cn/pdf_to_word"><i class="ico ico--pdfword"></i> PDF转WORD</a></li>
+                            <li><a  href="/zh-cn/pdf_to_powerpoint"><i class="ico ico--pdfpowerpoint"></i> PDF转POWERPOINT</a></li>
+                            <li><a  href="/zh-cn/pdf_to_excel"><i class="ico ico--pdfexcel"></i> PDF转EXCEL</a></li><li>
+                            <li><a  href="/zh-cn/convert-pdf-to-pdfa"><i class="ico ico--pdfa"></i> PDF转换至PDF/A</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="dropdown dropdown-full" id="menuSmall">
+                <span >所有PDF工具<i class="ico ico--down"></i></span>
+                <span class="nav__icon"><i class="ico ico--tools"></i></span>
+                <ul class="dropdown-menu mega menu-full">
+                    <li>
+                        <ul>
+                            <li><div>排列PDF文件</div></li>
+                            <li><a  href="/zh-cn/merge_pdf"><i class="ico ico--merge"></i> 合并PDF</a></li>
+                            <li><a  href="/zh-cn/split_pdf"><i class="ico ico--split"></i> 拆分 PDF</a></li>
+                            <li><a  href="/zh-cn/remove-pages"><i class="ico ico--remove"></i> 删除页面</a></li>
+                            <li><a href="/zh-cn/split_pdf#split,extract"><i class="ico ico--extract"></i> 提取页面</a></li>
+                            <li><a  href="/zh-cn/organize-pdf"><i class="ico ico--organize"></i> 排列PDF文件</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><div>优化PDF文件</div></li>
+                            <li><a  href="/zh-cn/compress_pdf"><i class="ico ico--compress"></i> 压缩PDF</a></li>
+                            <li><a  href="/zh-cn/repair-pdf"><i class="ico ico--repair"></i> 修复 PDF</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><div>转换为PDF文件</div></li>
+                            <li><a  href="/zh-cn/jpg_to_pdf"><i class="ico ico--jpgpdf"></i> JPG转PDF</a></li>
+                            <li><a  href="/zh-cn/word_to_pdf"><i class="ico ico--wordpdf"></i>WORD转PDF</a></li>
+                            <li><a  href="/zh-cn/powerpoint_to_pdf"><i class="ico ico--powerpointpdf"></i> PPT转PDF</a></li>
+                            <li><a  href="/zh-cn/excel_to_pdf"><i class="ico ico--excelpdf"></i> EXCEL转PDF</a></li>
+                            <li><a  href="/zh-cn/html-to-pdf"><i class="ico ico--htmlpdf"></i> HTML 转换至PDF</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><div>从 PDF转换至其他格式</div></li>
+                            <li><a  href="/zh-cn/pdf_to_jpg"><i class="ico ico--pdfjpg"></i> PDF转JPG</a></li>
+                            <li><a  href="/zh-cn/pdf_to_word"><i class="ico ico--pdfword"></i>PDF转WORD</a></li>
+                            <li><a  href="/zh-cn/pdf_to_powerpoint"><i class="ico ico--pdfpowerpoint"></i> PDF转POWERPOINT</a></li>
+                            <li><a  href="/zh-cn/pdf_to_excel"><i class="ico ico--pdfexcel"></i> PDF转EXCEL</a></li><li>
+                            <li><a  href="/zh-cn/convert-pdf-to-pdfa"><i class="ico ico--pdfa"></i> PDF转换至PDF/A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><div>编辑PDF文件</div></li>
+                            <li><a  href="/zh-cn/rotate_pdf"><i class="ico ico--rotate"></i>旋转PDF</a></li>
+                            <li><a  href="/zh-cn/add_pdf_page_number"><i class="ico ico--pagenumber"></i> 添加页码</a></li>
+                            <li><a  href="/zh-cn/pdf_add_watermark"><i class="ico ico--watermark"></i> 添加水印</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><div>PDF文件的安全</div></li>
+                            <li><a  href="/zh-cn/unlock_pdf"><i class="ico ico--unlock"></i> PDF解密</a></li>
+                            <li><a  href="/zh-cn/protect-pdf"><i class="ico ico--protect"></i> PDF加密</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+            </div>
+        <div class="desktop tooltip tooltip--bottom" title="iLovePDF 桌面版可提供离线操作模式">
+            <a href="/zh-cn/desktop" title="桌面版">
+                <i class="ico ico--desk"></i>
+            </a>
+        </div>
+        <div class="top-menu">
+    <ul class="nav">
+                        <li class="nav__item nav__item--gray">
+        <a href="https://www.ilovepdf.com/zh-cn/login"><span>登录</span></a>
+    </li>
+    <li class="nav__item nav__item--red">
+        <a href="https://www.ilovepdf.com/zh-cn/register">
+            <i class="ico ico--user"></i>
+            <span>注册</span></a>
+    </li>
+                                <li class="nav__item nav__item--sub">
+                <i class="ico ico--hamburger"></i>
+                <ul>
+                    <li><a href="/zh-cn"><i class="ico ico--ilovepdf"></i> 首页</a></li>
+                    <li class="nav__item--sub">
+                        <a><i class="ico ico--product"></i> 产品</a>
+                        <ul class="product__menu">
+                            <li><a href="/zh-cn/desktop"><i class="ico ico--desktop"></i> 桌面版</a></li>
+                            <li><a href="/zh-cn/mobile"><i class="ico ico--app"></i> 移动应用</a></li>
+                            <!--<li><a href="/zh-cn/site/signature"><i class="ico ico--signature"></i> 签字</a></li>-->
+                            <li><a href="https://www.ilovepdf.com/zh-cn/features"><i class="ico ico--features"></i> 我们的优势</a></li>
+                            <li><a href="https://developer.ilovepdf.com" target="_blank" rel="noopener"><i class="ico ico--developer"></i> API Rest</a></li>
+                            <li><a href="https://wordpress.org/plugins/ilovepdf/" rel="nofollow noopener" target="_blank"><i class="ico ico--wordpress"></i> Wordpress插件</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item--sub">
+                        <a><i class="ico ico--solutions"></i> 解决方案</a>
+                        <ul>
+                            <li><a href="/zh-cn/business"><i class="ico ico--business"></i> 商务解决方案</a></li>
+                            <li><a href="/zh-cn/education"><i class="ico ico--education"></i> 教育版</a></li>
+                            <li><a href="https://developer.ilovepdf.com" target="_blank" rel="noopener"><i class="ico ico--app"></i> 开发者</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/pricing"><i class="ico ico--pricing"></i> 价格</a></li>
+
+                  <li class="divider"></li>
+                   <li class="nav__item--sub"><a href="#"><i class="ico ico--lang"></i> 语言</a><span class="lang__current">
+    <i class="ico ico--lang"></i>
+    中文 (简体) <i class="ico ico--down"></i>
+</span>
+<ul class="lang__menu">
+    <li><a href="/"> English</a></li>
+                                    <li><a href="/es"> Español</a></li>
+                                <li><a href="/fr"> Français</a></li>
+                                <li><a href="/de"> Deutsch</a></li>
+                                <li><a href="/it"> Italiano</a></li>
+                                <li><a href="/pt"> Português</a></li>
+                                <li><a href="/ja"> 日本語</a></li>
+                                <li><a href="/ru"> Pусский</a></li>
+                                <li><a href="/ko"> 한국어</a></li>
+                                <li><a  class="active" ><svg aria-hidden="true" width="12" height="12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" class=""></path></svg> 中文 (简体)</a></li>
+                                <li><a href="/zh-tw"> 中文 (繁體)</a></li>
+                                <li><a href="/ar"> العربية</a></li>
+                                <li><a href="/bg"> Български</a></li>
+                                <li><a href="/ca"> Català</a></li>
+                                <li><a href="/nl"> Dutch</a></li>
+                                <li><a href="/el"> Ελληνικά</a></li>
+                                <li><a href="/hi"> हिन्दी</a></li>
+                                <li><a href="/id"> Bahasa Indonesia</a></li>
+                                <li><a href="/ms"> Bahasa Melayu</a></li>
+                                <li><a href="/pl"> Polski</a></li>
+                                <li><a href="/sv"> Svenska</a></li>
+                                <li><a href="/th"> ภาษาไทย</a></li>
+                                <li><a href="/tr"> Türkçe</a></li>
+                                <li><a href="/uk"> Українська</a></li>
+                                <li><a href="/vi"> Tiếng Việt</a></li>
+            </ul>
+</li>
+                    <li class="nav__item--sub"><a ><i class="ico ico--help"></i> 帮助</a>
+                        <ul>
+                            <li><a href="/zh-cn/help/faq"><i class="ico ico--faq"></i> 问与答</a></li>
+                            <li><a href="/zh-cn/help/documentation"><i class="ico ico--documentation"></i> 工具</a></li>
+                            <li><a href="/zh-cn/help/legal"><i class="ico ico--legal"></i> 法律 &amp; 隐私</a></li>
+                            <li><a href="/zh-cn/help/about"><i class="ico ico--about"></i> 我们的故事</a></li>
+                            <li><a  href="/zh-cn/contact"><i class="ico ico--contact"></i> 联络我们</a></li>
+                        </ul>
+                    </li>
+                 <li class="divider"></li>
+                    <li><a href="https://www.iloveimg.com/zh-cn"><i class="ico ico--iloveimg"></i> iLoveIMG</a></li>
+                </ul>
+            </li>
+                </ul>
+</div>    </div>
+</div><div class="main">
+        <div class="container">
+        <div class="box">
+            <h1 class="title">正在检查文件...</h1>
+            <div id="download" class="downloader">
+                <div class="downloader__extra">
+                    <a href="https://www.ilovepdf.com/zh-cn/pdf_to_word"
+                       class="btn-icon active downloader__extra__btn downloader__extra__btn--black tooltip tooltip--top"
+                       title="返回 PDF转WORD">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16">
+                            <title> 返回</title>
+                            <path d="M6.533 15.065L.438 8.968c-.116-.116-.208-.255-.27-.4a1.27 1.27 0 0 1 .009-.971c.066-.155.16-.296.277-.415l6.21-6.21A1.27 1.27 0 0 1 8.461.947c.49.49.485 1.295-.017 1.797l-4.02 4.02 10.47-.097a1.24 1.24 0 0 1 1.258 1.258 1.3 1.3 0 0 1-1.282 1.282L4.4 9.305l3.947 3.947c.49.492.485 1.295-.017 1.797s-1.306.508-1.797.017z"
+                                  fill="#fff" fill-rule="nonzero"/>
+                        </svg>
+                    </a>
+                </div>
+                <a class="downloader__btn " id="pickfiles"
+                   href="javascript:;">
+                    <svg aria-hidden="true" width="26" height="24" data-icon="download" role="img"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                              d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                              class=""></path>
+                    </svg>
+                    下载 WORD文件                </a>
+                <div class="downloader__extra">
+                    <a class="btn-icon downloader__extra__btn tooltip tooltip--top" id="gdrive_file_selector"
+                       title="保存至 Google Drive">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16">
+                            <path fill="#FFF"
+                                  d="M8.7375,5.80725 L3.021,15.70725 L0.12375,10.69725 L5.847,0.795 L8.7375,5.80725 Z M17.865,10.38225 L12.078,10.39125 L6.378,0.489 L12.1725,0.489 L17.865,10.38225 Z M17.87625,10.9875 L14.9865,15.9975 L3.5415,15.99 L6.43425,10.98375 L17.87625,10.9875 Z"/>
+                        </svg>
+                    </a>
+                    <a class="btn-icon downloader__extra__btn tooltip tooltip--bottom" id="dropbox_file_selector"
+                       title="保存至 Dropbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path fill="#FFF"
+                                  d="M5.3475,0.7035 L0.096,4.125 L3.708,7.03725 L9.018,3.765 L5.3475,0.7035 Z M17.904,4.14 L12.66525,0.7275 L9.01875,3.7725 L14.29875,7.03875 L17.904,4.14 Z M9.01875,10.305 L12.66525,13.35975 L17.904,9.945 L14.2995,7.0395 L9.01875,10.305 Z M0.096,9.9585 L5.3475,13.35975 L9.01875,10.305 L3.70875,7.0455 L0.096,9.9585 Z M9.01875,10.9635 L5.35575,14.0385 L3.786,13.02 L3.786,14.16 L9.01875,17.30475 L14.271,14.15175 L14.271,13.0125 L12.693,14.031 L9.01875,10.9635 Z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="downloader__extra">
+                    <a class="btn-icon downloader__extra__btn tooltip tooltip--top" id="sharelink"
+                       title="分享下载链接或扫描二维码">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path d="M10.963 7.004a4.12 4.12 0 0 0-.704-.566 4.19 4.19 0 0 0-2.261-.662 4.17 4.17 0 0 0-2.964 1.228l-3.8 3.812a4.19 4.19 0 0 0-1.225 2.959C0 16.1 1.875 17.967 4.2 17.968a4.18 4.18 0 0 0 2.96-1.222l3.144-3.144a.3.3 0 0 0-.213-.512h-.12a5.04 5.04 0 0 1-1.916-.371.3.3 0 0 0-.326.066L5.46 15.05a1.8 1.8 0 0 1-2.542 0 1.8 1.8 0 0 1 0-2.542l3.824-3.82a1.8 1.8 0 0 1 2.54 0 1.23 1.23 0 0 0 1.683 0 1.2 1.2 0 0 0 .347-.761 1.2 1.2 0 0 0-.347-.922zm5.777-5.776a4.19 4.19 0 0 0-5.928 0L7.67 4.366a.3.3 0 0 0 .219.512H8a5.03 5.03 0 0 1 1.913.374.3.3 0 0 0 .326-.066l2.255-2.252a1.8 1.8 0 0 1 2.542 0 1.8 1.8 0 0 1 0 2.542l-2.8 2.806-.024.027-.982.976a1.8 1.8 0 0 1-2.54 0 1.23 1.23 0 0 0-1.683 0 1.2 1.2 0 0 0 0 1.689c.347.348.752.632 1.198.838l.2.08.192.072.192.063.177.048.362.075a4.17 4.17 0 0 0 .446.042h.228l.18-.02.213-.018h.102l.207-.03.096-.018.174-.036h.033a4.19 4.19 0 0 0 1.943-1.102l3.812-3.812c1.637-1.637 1.637-4.3 0-5.928z"
+                                  fill="#fff" fill-rule="nonzero"/>
+                        </svg>
+                    </a>
+                    <a class="btn-icon downloader__extra__btn tooltip tooltip--bottom" id="delete"
+                       title="立即删除">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="19">
+                            <path d="M12.37 2.017H9.164V1c0-.557-.457-1-1.02-1H5.43c-.56 0-1.018.453-1.018 1v1H1.207A1.2 1.2 0 0 0 0 3.213v1.494h13.576V3.213c0-.66-.542-1.196-1.207-1.196zm-3.884 0H5.1V1c0-.186.152-.336.34-.336h2.715c.187 0 .34.15.34.336v1zM.68 17.413c0 .7.568 1.254 1.266 1.254h9.687c.698 0 1.266-.562 1.266-1.254V6.228H.68v11.185"
+                                  fill="#fff" fill-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="chained">
+                    <ul class="chained__list" title="新增功能！关联任务。"
+                        data-title="新增功能！关联任务。">
+                                                                    </ul>
+                </div>
+            </div>
+            <div class="downloader__info"></div>
+            <div class="downloader__warning">
+                <div class="repaired">
+                    一些 files已被修复                    <ul class="repaired__list">
+
+                    </ul>
+                </div>
+                <div class="damaged">
+                    一些 files 尚未处理                    <ul class="damaged__list">
+
+                    </ul>
+                </div>
+                <div class="conformance">
+                    一些files已降级为限制较少的PDF/A一致性                    <ul class="conformance__list">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div id="ad" class="add">
+        <script defer src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle adslot_1"
+             style="display:block;min-width:400px;max-width:970px;width: 970px; width:970px;height:90px;margin:auto;"
+             data-ad-client="ca-pub-9932189667849434"
+             data-ad-slot="4259213921"></ins>
+        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+        <div class="download__add">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="share">
+    <h4 class="share__title">怎样感谢iLovepdf?  让世界都知道我们！</h4>
+    <h5 class="share__subtitle">
+        如果iLovePDF的<b>PDF转WORD</b>对你有帮助，你也可以通过捐款帮助我们<i class="fa fa-smile-o"></i>    </h5>
+    <ul class="share__buttons">
+                    <li>
+                <a class="share__buttons__item share__buttons__item--facebook"
+                   onclick="popUp=window.open('http://www.facebook.com/sharer.php?u=https://www.ilovepdf.com/zh-cn/pdf_to_word','popupwindow','scrollbars=yes,width=700,height=400');popUp.focus();return false;">
+                    <svg aria-hidden="true" width="12" height="12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" class=""></path></svg>
+                    Facebook
+                </a></li>
+            <li><a class="share__buttons__item share__buttons__item--twitter"
+                   onclick="popUp=window.open('http://twitter.com/intent/tweet?url=https://www.ilovepdf.com/zh-cn/pdf_to_word&text=将你的 PDF 转换为 DOC 和 DOCX 文件，以便于编辑。&via=ilovepdf_com&hashtags=ilovepdf','popupwindow','scrollbars=yes,width=700,height=400');popUp.focus();return false;">
+                    <svg aria-hidden="true" width="12" height="12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class=""></path></svg>
+                    Twitter</a></li>
+            <li><a class="share__buttons__item share__buttons__item--google"
+                   onclick="popUp=window.open('https://plus.google.com/share?url=https://www.ilovepdf.com/zh-cn/pdf_to_word','popupwindow','scrollbars=yes,width=700,height=400');popUp.focus();return false;">
+                    <svg aria-hidden="true" width="12" height="12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" class=""></path></svg>
+                    Google+</a></li>
+            <li><a class="share__buttons__item share__buttons__item--linkedin"
+                   onclick="popUp=window.open('http://www.linkedin.com/shareArticle?url=https://www.ilovepdf.com/zh-cn/pdf_to_word','popupwindow','scrollbars=yes,width=700,height=400');popUp.focus();return false;">
+                    <svg aria-hidden="true" width="12" height="12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z" class=""></path></svg>
+                    LinkedIn</a></li>
+
+            </ul>
+</div>                                                    </div>
+                        <div class="col-md-6">    <div id="ad" class="add">
+        <script defer src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Squared download page -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-9932189667849434"
+             data-ad-slot="8685848322"></ins>
+        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade text-left" id="linkModal" tabindex="-1" role="dialog" aria-labelledby="Link Modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+                            <path d="M12 1.208L10.79 0 6 4.792 1.21 0 0 1.208 4.79 6 0 10.792 1.21 12 6 7.208 10.79 12 12 10.792 7.21 6z"
+                                  fill="#383E45" fill-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="title3 red">复制和发送下载链接</h3>
+                    <div class="form__group form__group--btn form__group--btn-lg">
+                        <div class="input--icon input--world">
+                            <input id="dlink" type="text" class="input" value="" onClick="this.select();"
+                                   readonly="true">
+                        </div>
+                        <button class="btn" id="autoCopy">
+                            <svg aria-hidden="true" width="12" height="12" role="img" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                      d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"
+                                      class=""></path>
+                            </svg>
+                            复制                        </button>
+                    </div>
+                </div>
+                <div class="modal-body text-left">
+                    <style>
+                        #qrcode{ margin-right: 24px;}
+                        .listdot { margin: 24px auto 0; max-width: 350px; text-align: left; }
+                        h3.title3.red{ margin-bottom: 24px;}
+                    </style>
+                    <h3 class="title3 red">立即下载至你的手机</h3>
+                    <!--<p>通过扫描二维码，将已处理的文件下载至你的设备。</p>-->
+                    <div class="d-flex">
+                        <div id="qrcode"></div>
+                        <!--
+                        <div>
+                            <ul class="listdot">
+                                <li>打开你设备上的相机。</li>
+                                <li>用你设备上的相机对准二维码</li>
+                                <li>点击屏幕上的通知，以启用文件直接传输功能。</li>
+                            </ul>
+                        </div>
+                        -->
+                    </div>
+
+
+                    <script type="text/javascript" src="/js/qrcode.min.js"></script>
+                    <script type="text/javascript">
+                        var qrcode = null;
+                        function printQr(){
+                            var link = document.getElementById("pickfiles").getAttribute('href');
+                            if(qrcode == null) {
+                                qrcode = new QRCode(document.getElementById("qrcode"), {
+                                    text: link,
+                                    width: 250,
+                                    height: 250,
+                                    //colorDark: "#E5322D",
+                                    colorDark: "#383E45",
+                                    colorLight: "#ffffff",
+                                    correctLevel: QRCode.CorrectLevel.M
+                                });
+                            }
+                            else{
+                                qrcode.makeCode(link);
+                            }
+                        }
+
+                        function waitForLink(){
+                            var link = document.getElementById("pickfiles").getAttribute('href');
+                            if(/javascript/.test(link)){
+                                setTimeout(function(){
+                                    waitForLink();
+                                }, 200)
+                            }
+                            else{
+                                printQr();
+                            }
+                        }
+                        waitForLink();
+                    </script>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modals -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="File available time"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">文件保留时间</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+                            <path d="M12 1.208L10.79 0 6 4.792 1.21 0 0 1.208 4.79 6 0 10.792 1.21 12 6 7.208 10.79 12 12 10.792 7.21 6z"
+                                  fill="#383E45" fill-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>你所有的文件将在以下时间后自动删除：</p>
+                    <div id="countdown" class="countdown">
+                        <div class="countdown__item">
+                            <div class="countdown__item__time">-</div>
+                            <div class="countdown__item__period">小时</div>
+                        </div>
+                        <div class="countdown__item">
+                            <div class="countdown__item__time">-</div>
+                            <div class="countdown__item__period">分钟</div>
+                        </div>
+                        <div class="countdown__item">
+                            <div class="countdown__item__time">-</div>
+                            <div class="countdown__item__period">秒</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            id="btnDelete">立即删除</button>
+                    <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var downloadMessages = {
+            'TaskSuccess': '你的PDF已成功转换为可编辑的WORD文件',
+            'TaskWaiting': '文件已上传, 但尚未收到处理命令。',
+            'TaskProcessing': '正在处理文件。',
+            'TaskSuccessWithWarnings': '该任务已处理完成（带有错误提醒）。',
+            'TaskError': '该任务已处理完成（带有错误提醒）。',
+            'TaskDeleted': '该任务已被删除。',
+            'TaskNotFound': '未找到任务'
+        };
+
+        var iloveLang = {
+            'Back to homepage': '返回首页',
+            'Saved': '已保存',
+            'Image': '图片',
+            'Your ${fileType} is now ${percent}% smaller!': '你的${fileType}减小了了${percent}{percent}%！',
+            'Damaged/Corrupted File': '已损坏的文件',
+            'Repaired File': '已修复的文件',
+            'We’re sorry. Something went wrong.': '很抱歉，似乎出错了。',
+            'alreadyCompressed': '很抱歉, 你的文件已压缩得很好, 我们无法在确保质量的情况下进一步压缩它。',
+
+            'File number exceeded': '文件数量已超过限制',
+            'File size exceeded': '文件大小已超过限制',
+            'Sorry, we are not ready for that.': '抱歉, 我们还没准备好。',
+            'superlimitWhoa': "你已达到了高级用户的上限。哇哦！",
+            'superlimitDownload': "遗憾的是，我们的系统目前没有足够的能力来处理你的任务。",
+            //Quan hi hagi Desktop App
+            //'superlimitDownload': '获取我们的桌面电脑应用程序，以便没有任何限制地编辑你的文件。',
+            'Original size (in pixels) for this image': '这个图片的原始尺寸 (以像素为单位)',
+            'This image will be resized to this size (in pixels)': '该图片将调整为这个尺寸 (以像素为单位)',
+            'Uploading...': "正在上传...",
+            '1 file': '1个文件',
+            '1 mb': '1 mb',
+            '${limit} files': '${limit} 文件',
+            '${limit} mb': '${limit} MB',
+            'registeredLevel': '注册用户',
+            'premiumLevel': '高级用户',
+            'publicLevel': '非注册用户',
+            'limitTaskMsg': "这个关联任务<strong>的文件数量限制是${currentLimit}</strong>，针对${currentLevel}。<strong>${nextLevel}最多可以上传${nextLimit}</strong>。",
+            'Limit exceeded': '升级帐户',
+        };
+
+        var ilovepdfConfig = {
+            action: 'download',
+            workerServer: 'https://api1o.ilovepdf.com',
+            taskId: 'xq46c5vc8nl8tx2rdvtb512zkz937hfr90h4f56xvk987w6ql3nkr7x83pr4z80bq1yxn5smzz7l061vjbph5A0jjfzv6kxmmpz8gcpst0tfzmAtq1qgx0hsdxn46pcc8zjqv1m7fsf4t260twxAyqmhqkws07yw53vym1n7lyhgwp41rAkq',
+            token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1MjMzNjQ4MjQsIm5iZiI6MTUyMzM2NDgyNCwianRpIjoicHJvamVjdF9wdWJsaWNfYzkwNWRkMWMwMWU5ZmQ3NzY5ODNjYTQwZDBhOWQyZjNfT1Vzd2EwODA0MGI4ZDJjN2NhM2NjZGE2MGQ2MTBhMmRkY2U3NyJ9.qvHSXgCJgqpC4gd6-paUlDLFmg0o2DsOvb1EUYPYx_E',
+            tool: 'pdfoffice',
+            subtool: 'pdfword',
+            realTool: 'pdfword',
+            fileLimits: {"merge":{"mb":80,"files":20},"split":{"mb":80,"files":1},"compress":{"mb":160,"files":1},"officepdf":{"mb":10,"files":1},"wordpdf":{"mb":10,"files":1},"powerpointpdf":{"mb":10,"files":1},"excelpdf":{"mb":10,"files":1},"pdfword":{"mb":10,"files":1},"pdfpowerpoint":{"mb":10,"files":1},"pdfoffice":{"mb":10,"files":1},"pdfexcel":{"mb":10,"files":1},"pdfjpg":{"mb":20,"files":1},"imagepdf":{"mb":30,"files":15},"pagenumber":{"mb":80,"files":1},"watermark":{"mb":80,"files":1},"rotate":{"mb":80,"files":15},"unlock":{"mb":80,"files":1},"protect":{"mb":80,"files":1},"pdfa":{"mb":100,"files":1},"repair":{"mb":80,"files":1},"organize":{"mb":80,"files":3},"resizeimage":{"mb":130,"files":15},"compressimage":{"mb":130,"files":15},"cropimage":{"mb":50,"files":1},"converttojpg":{"mb":130,"files":15},"convertfromjpg":{"mb":130,"files":15},"rotateimage":{"mb":130,"files":15},"watermarkimage":{"mb":130,"files":15},"memeimage":{"mb":50,"files":1},"editimage":{"mb":50,"files":1}},
+            allFileLimits: {"limits":{"merge":{"mb":80,"files":20},"split":{"mb":80,"files":1},"compress":{"mb":160,"files":1},"officepdf":{"mb":10,"files":1},"wordpdf":{"mb":10,"files":1},"powerpointpdf":{"mb":10,"files":1},"excelpdf":{"mb":10,"files":1},"pdfword":{"mb":10,"files":1},"pdfpowerpoint":{"mb":10,"files":1},"pdfoffice":{"mb":10,"files":1},"pdfexcel":{"mb":10,"files":1},"pdfjpg":{"mb":20,"files":1},"imagepdf":{"mb":30,"files":15},"pagenumber":{"mb":80,"files":1},"watermark":{"mb":80,"files":1},"rotate":{"mb":80,"files":15},"unlock":{"mb":80,"files":1},"protect":{"mb":80,"files":1},"pdfa":{"mb":100,"files":1},"repair":{"mb":80,"files":1},"organize":{"mb":80,"files":3},"resizeimage":{"mb":130,"files":15},"compressimage":{"mb":130,"files":15},"cropimage":{"mb":50,"files":1},"converttojpg":{"mb":130,"files":15},"convertfromjpg":{"mb":130,"files":15},"rotateimage":{"mb":130,"files":15},"watermarkimage":{"mb":130,"files":15},"memeimage":{"mb":50,"files":1},"editimage":{"mb":50,"files":1}},"registered_limits":{"merge":{"mb":100,"files":25},"split":{"mb":100,"files":1},"compress":{"mb":200,"files":2},"officepdf":{"mb":15,"files":1},"wordpdf":{"mb":15,"files":1},"powerpointpdf":{"mb":15,"files":1},"excelpdf":{"mb":15,"files":1},"pdfoffice":{"mb":15,"files":1},"pdfword":{"mb":15,"files":1},"pdfpowerpoint":{"mb":15,"files":1},"pdfexcel":{"mb":15,"files":1},"pdfjpg":{"mb":25,"files":2},"imagepdf":{"mb":40,"files":20},"pagenumber":{"mb":100,"files":2},"watermark":{"mb":100,"files":2},"rotate":{"mb":100,"files":20},"unlock":{"mb":100,"files":2},"protect":{"mb":100,"files":2},"pdfa":{"mb":100,"files":1},"repair":{"mb":100,"files":1},"organize":{"mb":100,"files":5},"resizeimage":{"mb":200,"files":30},"compressimage":{"mb":200,"files":30},"cropimage":{"mb":90,"files":1},"converttojpg":{"mb":200,"files":30},"convertfromjpg":{"mb":200,"files":30},"rotateimage":{"mb":200,"files":30},"watermarkimage":{"mb":200,"files":30},"memeimage":{"mb":200,"files":1},"editimage":{"mb":50,"files":1}},"premium_limits":{"merge":{"mb":1000,"files":200},"split":{"mb":1000,"files":1},"compress":{"mb":1000,"files":10},"officepdf":{"mb":1000,"files":10},"wordpdf":{"mb":1000,"files":10},"powerpointpdf":{"mb":1000,"files":10},"excelpdf":{"mb":1000,"files":10},"pdfword":{"mb":1000,"files":10},"pdfpowerpoint":{"mb":1000,"files":10},"pdfexcel":{"mb":1000,"files":10},"pdfoffice":{"mb":1000,"files":10},"pdfjpg":{"mb":1000,"files":10},"imagepdf":{"mb":1000,"files":80},"pagenumber":{"mb":1000,"files":10},"watermark":{"mb":1000,"files":10},"rotate":{"mb":1000,"files":80},"unlock":{"mb":1000,"files":10},"protect":{"mb":1000,"files":80},"pdfa":{"mb":1000,"files":10},"repair":{"mb":1000,"files":10},"organize":{"mb":1000,"files":20},"resizeimage":{"mb":1000,"files":60},"compressimage":{"mb":1000,"files":60},"cropimage":{"mb":1000,"files":1},"converttojpg":{"mb":5000,"files":60},"convertfromjpg":{"mb":1000,"files":60},"rotateimage":{"mb":1000,"files":60},"watermarkimage":{"mb":1000,"files":60},"memeimage":{"mb":1000,"files":1},"editimage":{"mb":50,"files":1}},"temp_limits":{"merge":{"mb":1000,"files":80},"split":{"mb":1000,"files":1},"compress":{"mb":1000,"files":3},"officepdf":{"mb":1000,"files":3},"wordpdf":{"mb":100,"files":3},"powerpointpdf":{"mb":100,"files":3},"excelpdf":{"mb":100,"files":3},"pdfword":{"mb":100,"files":1},"pdfpowerpoint":{"mb":100,"files":1},"pdfexcel":{"mb":100,"files":1},"pdfoffice":{"mb":100,"files":1},"pdfjpg":{"mb":100,"files":3},"imagepdf":{"mb":1000,"files":80},"pagenumber":{"mb":1000,"files":3},"watermark":{"mb":1000,"files":3},"rotate":{"mb":1000,"files":30},"unlock":{"mb":1000,"files":10},"protect":{"mb":1000,"files":5},"pdfa":{"mb":100,"files":1},"repair":{"mb":1000,"files":2},"organize":{"mb":1000,"files":5},"resizeimage":{"mb":1000,"files":60},"compressimage":{"mb":1000,"files":60},"cropimage":{"mb":1000,"files":1},"converttojpg":{"mb":5000,"files":60},"convertfromjpg":{"mb":1000,"files":60},"rotateimage":{"mb":1000,"files":60},"watermarkimage":{"mb":1000,"files":60},"memeimage":{"mb":1000,"files":1},"editimage":{"mb":50,"files":1}}},
+            level: 'user',
+            user: null,
+            fp: 1,
+            fpt: 7        };
+
+        //ga('send', 'event', 'tool', 'download', 'pdfword');
+        ga('send', 'event', 'user', 'process', 'pdfword');
+    </script>
+</div>
+            <div class="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="title4 red">iLovePDF</div>
+                <ul class="footer-main__nav">
+                    <li><a href="/zh-cn">首页</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/features">我们的优势</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/pricing">价格</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/help/documentation">工具</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/help/faq">问与答</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="title4 red">产品</div>
+                <ul class="footer-main__nav">
+                    <li><a href="/zh-cn/desktop">iLovePDF 桌面版</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/mobile">iLovePDF 移动版</a></li>
+                    <li><a href="https://developer.ilovepdf.com" target="_blank" rel="noopener">开发者</a></li>
+                    <li><a href="https://wordpress.org/plugins/ilovepdf/" rel="nofollow noopener" target="_blank">Wordpress插件</a></li>
+                    <li><a href="https://www.iloveimg.com/zh-cn" target="_blank">iloveimg.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="title4 red">解决方案</div>
+                <ul class="footer-main__nav">
+                    <li><a href="https://www.ilovepdf.com/zh-cn/business">商务解决方案</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/education">教育版</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="title4 red">公司</div>
+                <ul class="footer-main__nav">
+                    <li><a href="https://www.ilovepdf.com/zh-cn/help/about">我们的故事</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/blog">博客</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/press">媒体资料</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/help/legal">法律 &amp; 隐私</a></li>
+                    <li><a href="https://www.ilovepdf.com/zh-cn/contact">联络我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer-big__lang">
+                    <span class="lang__current">
+    <i class="ico ico--lang"></i>
+    中文 (简体) <i class="ico ico--down"></i>
+</span>
+<ul class="lang__menu">
+    <li><a href="/"> English</a></li>
+                                    <li><a href="/es"> Español</a></li>
+                                <li><a href="/fr"> Français</a></li>
+                                <li><a href="/de"> Deutsch</a></li>
+                                <li><a href="/it"> Italiano</a></li>
+                                <li><a href="/pt"> Português</a></li>
+                                <li><a href="/ja"> 日本語</a></li>
+                                <li><a href="/ru"> Pусский</a></li>
+                                <li><a href="/ko"> 한국어</a></li>
+                                <li><a  class="active" ><svg aria-hidden="true" width="12" height="12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" class=""></path></svg> 中文 (简体)</a></li>
+                                <li><a href="/zh-tw"> 中文 (繁體)</a></li>
+                                <li><a href="/ar"> العربية</a></li>
+                                <li><a href="/bg"> Български</a></li>
+                                <li><a href="/ca"> Català</a></li>
+                                <li><a href="/nl"> Dutch</a></li>
+                                <li><a href="/el"> Ελληνικά</a></li>
+                                <li><a href="/hi"> हिन्दी</a></li>
+                                <li><a href="/id"> Bahasa Indonesia</a></li>
+                                <li><a href="/ms"> Bahasa Melayu</a></li>
+                                <li><a href="/pl"> Polski</a></li>
+                                <li><a href="/sv"> Svenska</a></li>
+                                <li><a href="/th"> ภาษาไทย</a></li>
+                                <li><a href="/tr"> Türkçe</a></li>
+                                <li><a href="/uk"> Українська</a></li>
+                                <li><a href="/vi"> Tiếng Việt</a></li>
+            </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer-main__info">
+                    <div class="slogan">
+                        <p>&copy; iLovePDF 2020 &reg; - 你的 PDF 编辑器</p>
+                    </div>
+                        <div class="social">
+        <a class="social__item social__item--twitter" href="https://twitter.com/ilovepdf_com" rel="noopener" target="_blank" title="关注" ></a>
+        <a class="social__item social__item--facebook" href="https://www.facebook.com/ilovepdfcom-238648522858564/" rel="noopener" target="_blank" title="赞"></a>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        
+<div id="network" class="network">
+    <i class="ico ico--network"></i>
+    <div class="network__text">
+        哎呀!你的网络连接有问题...    </div>
+</div>
+<script>
+        var siteData = {
+        csrfParam: '_csrf-ilovepdf',
+        csrfToken: 'NDK9CMW1B8oHVg0gfJf3QdjqzcFnlQvKTF9j1iWZS4d4fvxmlP8y-GwMeEhPzp874buugyj3bqwNbwSwR88Y4g=='
+    };
+        var lang = 'zh-cn';
+    var brand = 'iLovePDF';
+    var brand_ref = 'ilovepdf';
+
+        var nds = {
+        'ck': 0,
+        'content': '<p>我们希望你喜欢它，并发现它的使用更加方便。<br>如果遇到任何问题，请<a href=\"/zh-cn/contact\">告知我们</a>。<br>如果我们知道你的问题所在，我们就能够帮助你解决。</p>',
+        'title': '<span style="color:#1D9D58">欢迎来到全新设计的  iLovePDF</span>'
+    };
+    </script>
+            <script>
+            var uCookie = {
+                'ck': 0,
+                'uc': 'CN',
+                'content': '<span class=\"txtSmall\">我们使用自己的，以及第三方的Cookies来生成统计数据，并通过浏览分析显示定制广告，与我们的合作伙伴分享。使用iLovePDF，即表示你同意<a target=\"_blank\" href=\"/zh-cn/help/cookies\" style=\"text-decoration: underline;\">我们使用cookies</a></span>。  <br/><a class=\"langtoas langtoas--big\" style=\"width:auto;margin-left: 0px;margin-top:10px;\">好的</a>',
+                'title': '关于Cookie使用的欧洲法律规定'
+            }
+        </script>
+    <script src="/dist/js/web.7e81452.js" async="async"></script>
+<script src="/dist/js/download.7e81452.js" async="async"></script></body>
+</html>
