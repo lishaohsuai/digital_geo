@@ -112,6 +112,9 @@
     <ClCompile Include="myAlgorithm.cpp">
       <Filter>tool</Filter>
     </ClCompile>
+    <ClCompile Include="mySimpleMesh.cpp">
+      <Filter>tool</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="surfacemeshprocessing.qrc">
@@ -147,6 +150,9 @@
       <Filter>tool</Filter>
     </ClInclude>
     <ClInclude Include="point3d.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="mySimpleMesh.h">
       <Filter>tool</Filter>
     </ClInclude>
   </ItemGroup>

@@ -21,11 +21,20 @@ void MeshParamWidget::CreateTabWidget(void)
 
 	pbMeanCurvature = new QPushButton(tr("Mean Curvature"));
 	connect(pbMeanCurvature, SIGNAL(clicked()), SIGNAL(MeanCurvatureProcessSignal()));
+	
+	ptSimpleEdit = new QTextEdit();
+	//connect(ptSimpleEdit, )
 
+	pbSimpleMesh = new QPushButton(tr("Simple Mesh"));
+	/*connect(pbSimpleMesh, SIGNAL(clicked(ptSimpleEdit->toPlainText())), SIGNAL(SimpleMeshSignal(QString)));*/
+	connect(pbSimpleMesh, SIGNAL(clicked()), this, SLOT(buttonProcessSLOT()));
+	connect(this, SIGNAL(myStringdd(QString)), SIGNAL(SimpleMeshSignal(QString)));
 	QVBoxLayout *layout = new QVBoxLayout();
 	layout->addWidget(pbPrintInfo);
 	layout->addWidget(pbGaussianCurvature);
 	layout->addWidget(pbMeanCurvature);
+	layout->addWidget(ptSimpleEdit);
+	layout->addWidget(pbSimpleMesh);
 	layout->addStretch();
 	wParam = new QWidget();
 	wParam->setLayout(layout);
@@ -35,6 +44,11 @@ void MeshParamWidget::CreateTabWidget(void)
 	saParam->setWidget(wParam);
 	saParam->setWidgetResizable(true);
 }
+
+void MeshParamWidget::buttonProcessSLOT() {
+	emit(myStringdd(ptSimpleEdit->toPlainText()));
+}
+
 
 void MeshParamWidget::CreateLayout(void)
 {

@@ -3,7 +3,7 @@
 #include "QGLViewerWidget.h"
 #include "myAlgorithm.h"
 #include "MeshDefinition.h"
-
+#include "mySimpleMesh.h"
 class MeshViewerWidget : public QGLViewerWidget
 {
 	Q_OBJECT
@@ -32,6 +32,7 @@ public slots:
 	void PrintMeshInfo(void);
 	void GaussianCurvatureProcess(void);
 	void MeanCurvatureProcess(void);
+	void SimpleMeshProcess(QString);
 protected:
 	virtual void DrawScene(void) override;
 	void DrawSceneMesh(void);
@@ -60,4 +61,5 @@ protected:
 
 	MeshAlgorithm myMeshAlgorithm;
 	ImageAlgorithm myImageAlgorithm;
+	SimpleMesh mySimpleMesh;
 };

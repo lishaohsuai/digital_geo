@@ -17,6 +17,7 @@ public:
 	Point3d calPointVoronoiMixed(Point3d a, Point3d b, Point3d c);
 	bool isInTriangle(Point3d a, Point3d b, Point3d c, Point3d p);
 	void calCotAlphaCotBeta(Point3d p, Point3d a, Point3d b, Point3d c, double &cotAlpha, double &cotBeta);
+	void calABCD(const Point3d &point1, const Point3d &point2, const Point3d &point3, double &a, double &b, double &c, double &d);
 };
 
 

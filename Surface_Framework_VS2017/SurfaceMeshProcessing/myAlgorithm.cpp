@@ -170,6 +170,25 @@ void MeshAlgorithm::calCotAlphaCotBeta(Point3d p, Point3d a, Point3d b, Point3d 
 
 
 /**************************************************
+@brief   : 计算三个点形成的平片的 ax+by+cz+d=0的a b c d表示形式
+@author  : lee
+@input   ：三个顶点
+@output  ：4个参数
+@time    : none
+**************************************************/
+void MeshAlgorithm::calABCD(const Point3d &A, const Point3d &B, const Point3d &C, double &a, double &b, double &c, double &d) {
+	vector3d AB(B.x - A.x, B.y - A.y, B.z - A.z);
+	vector3d AC(C.x - A.x, C.y - A.y, C.z - A.z);
+	vector3d normalVec = AB.crossp(AC);
+	double length = normalVec.norm(); // 求出法向的长度
+	a = normalVec.getx() / length;
+	b = normalVec.gety() / length;
+	c = normalVec.getz() / length;
+	d = (-1) * (a * A.getX() + b * A.getY() + c * A.getZ());
+}
+
+
+/**************************************************
 @brief   : 颜色映射归一化  
 @author  : 王丹丹
 @input   : none

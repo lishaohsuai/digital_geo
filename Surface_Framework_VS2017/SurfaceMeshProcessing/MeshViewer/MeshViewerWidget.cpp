@@ -10,9 +10,8 @@ MeshViewerWidget::MeshViewerWidget(QWidget* parent)
 	isEnableLighting(true),
 	isTwoSideLighting(false),
 	isDrawBoundingBox(false),
-	isDrawBoundary(false)
-{
-}
+	isDrawBoundary(false),
+	mySimpleMesh(&mesh){}
 
 MeshViewerWidget::~MeshViewerWidget(void)
 {
@@ -195,6 +194,23 @@ void MeshViewerWidget::MeanCurvatureProcess(void) {
 	for (Mesh::VertexIter v_it = mesh.vertices_begin(); v_it != mesh.vertices_end(); ++v_it) {
 		std::cout << "MeanCurvature " << calMeanCurvature(v_it) << std::endl;
 	}
+}
+
+
+
+
+/**************************************************
+@brief   : 网格简化
+@author  : lee
+@input   ：none
+@output  ：none
+@time    : none
+**************************************************/
+void MeshViewerWidget::SimpleMeshProcess(QString str) {
+	mySimpleMesh.setMesh(&mesh);
+	mySimpleMesh.computeQ();
+	mySimpleMesh.simpleMesh(str);
+	std::cout << "[DEBUG]" << "一遍完成" << std::endl;
 }
 
 
@@ -440,7 +456,7 @@ void MeshViewerWidget::DrawFlat(void) const
 	for (const auto& fh : mesh.faces())
 	{
 		glNormal3dv(mesh.normal(fh).data());
-		for (const auto& fvh : mesh.fv_range(fh))
+		for (const auto& fvh : mesh.fv_range(fh)) // 出现卡死现象
 		{
 			glNormal3dv(mesh.normal(fvh).data());
 			glVertex3dv(mesh.point(fvh).data());

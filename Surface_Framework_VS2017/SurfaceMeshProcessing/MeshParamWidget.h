@@ -18,6 +18,10 @@ signals:
 	void PrintInfoSignal();
 	void GaussianCurvatureProcessSignal();
 	void MeanCurvatureProcessSignal();
+	void SimpleMeshSignal(QString);
+	void myStringdd(QString);
+public slots:
+	void buttonProcessSLOT();
 private:
 	QTabWidget *twParam;
 	QWidget *wParam;
@@ -25,4 +29,6 @@ private:
 	QPushButton *pbPrintInfo;
 	QPushButton *pbGaussianCurvature;
 	QPushButton *pbMeanCurvature;
+	QTextEdit *ptSimpleEdit;
+	QPushButton *pbSimpleMesh;
 };

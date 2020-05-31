@@ -7,6 +7,7 @@
 #pragma comment(lib, "OpenMeshCore.lib")
 #pragma comment(lib, "OpenMeshTools.lib")
 #endif
+#include <Eigen/Dense>
 struct color {
 	int R;
 	int G;
@@ -23,6 +24,10 @@ struct MeshTraits : public OpenMesh::DefaultTraits
 	FaceAttributes(OpenMesh::Attributes::Status | OpenMesh::Attributes::Normal);
 	EdgeAttributes(OpenMesh::Attributes::Status);
 	HalfedgeAttributes(OpenMesh::Attributes::Status);
+	VertexTraits{
+		Eigen::MatrixXd Ksum; // store anything you want
+		bool deleted;
+	};
 };
 typedef OpenMesh::TriMesh_ArrayKernelT<MeshTraits> Mesh;
 
