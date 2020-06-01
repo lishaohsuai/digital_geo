@@ -24,8 +24,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F689346C-BB0B-4237-A79C-EF6C69E72B99}
 		Qt5Version = 5.11.3
+		SolutionGuid = {F689346C-BB0B-4237-A79C-EF6C69E72B99}
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True

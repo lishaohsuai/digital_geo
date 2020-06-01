@@ -26,15 +26,19 @@ void MeshParamWidget::CreateTabWidget(void)
 	//connect(ptSimpleEdit, )
 
 	pbSimpleMesh = new QPushButton(tr("Simple Mesh"));
-	/*connect(pbSimpleMesh, SIGNAL(clicked(ptSimpleEdit->toPlainText())), SIGNAL(SimpleMeshSignal(QString)));*/
 	connect(pbSimpleMesh, SIGNAL(clicked()), this, SLOT(buttonProcessSLOT()));
 	connect(this, SIGNAL(myStringdd(QString)), SIGNAL(SimpleMeshSignal(QString)));
+
+	pbLaplacianDef = new QPushButton(tr("LaplacianDeformation"));
+	connect(pbLaplacianDef, SIGNAL(clicked()), SIGNAL(LaplacianProcessSignal()));
+
 	QVBoxLayout *layout = new QVBoxLayout();
 	layout->addWidget(pbPrintInfo);
 	layout->addWidget(pbGaussianCurvature);
 	layout->addWidget(pbMeanCurvature);
 	layout->addWidget(ptSimpleEdit);
 	layout->addWidget(pbSimpleMesh);
+	layout->addWidget(pbLaplacianDef);
 	layout->addStretch();
 	wParam = new QWidget();
 	wParam->setLayout(layout);

@@ -4,6 +4,7 @@
 #include "myAlgorithm.h"
 #include "MeshDefinition.h"
 #include "mySimpleMesh.h"
+#include "laplacianDeformation.h"
 class MeshViewerWidget : public QGLViewerWidget
 {
 	Q_OBJECT
@@ -33,6 +34,7 @@ public slots:
 	void GaussianCurvatureProcess(void);
 	void MeanCurvatureProcess(void);
 	void SimpleMeshProcess(QString);
+	void LaplacianProcess(void);
 protected:
 	virtual void DrawScene(void) override;
 	void DrawSceneMesh(void);
@@ -62,4 +64,5 @@ protected:
 	MeshAlgorithm myMeshAlgorithm;
 	ImageAlgorithm myImageAlgorithm;
 	SimpleMesh mySimpleMesh;
+	LaplacianDeformation myLaplacianDeformation;
 };

@@ -33,6 +33,7 @@ void MainViewerWidget::CreateParamWidget(void)
 	connect(meshparamwidget, SIGNAL(GaussianCurvatureProcessSignal()), meshviewerwidget, SLOT(GaussianCurvatureProcess()));
 	connect(meshparamwidget, SIGNAL(MeanCurvatureProcessSignal()), meshviewerwidget, SLOT(MeanCurvatureProcess()));
 	connect(meshparamwidget, SIGNAL(SimpleMeshSignal(QString)), meshviewerwidget, SLOT(SimpleMeshProcess(QString)));
+	connect(meshparamwidget, SIGNAL(LaplacianProcessSignal()), meshviewerwidget, SLOT(LaplacianProcess()));
 }
 
 void MainViewerWidget::CreateViewerDialog(void)

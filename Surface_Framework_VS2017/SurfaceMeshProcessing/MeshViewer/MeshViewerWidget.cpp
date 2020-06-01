@@ -11,7 +11,9 @@ MeshViewerWidget::MeshViewerWidget(QWidget* parent)
 	isTwoSideLighting(false),
 	isDrawBoundingBox(false),
 	isDrawBoundary(false),
-	mySimpleMesh(&mesh){}
+	mySimpleMesh(&mesh),
+	myLaplacianDeformation(&mesh)
+{}
 
 MeshViewerWidget::~MeshViewerWidget(void)
 {
@@ -197,6 +199,17 @@ void MeshViewerWidget::MeanCurvatureProcess(void) {
 }
 
 
+/**************************************************
+@brief   : 拉普拉斯网格形变
+@author  : lee
+@input   ：none
+@output  ：none
+@time    : none
+**************************************************/
+void MeshViewerWidget::LaplacianProcess(void) {
+	myLaplacianDeformation.setMeshInfo(&mesh);
+	myLaplacianDeformation.smoothFunc();
+}
 
 
 /**************************************************

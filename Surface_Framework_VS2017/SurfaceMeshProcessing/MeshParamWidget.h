@@ -18,6 +18,7 @@ signals:
 	void PrintInfoSignal();
 	void GaussianCurvatureProcessSignal();
 	void MeanCurvatureProcessSignal();
+	void LaplacianProcessSignal();
 	void SimpleMeshSignal(QString);
 	void myStringdd(QString);
 public slots:
@@ -31,4 +32,5 @@ private:
 	QPushButton *pbMeanCurvature;
 	QTextEdit *ptSimpleEdit;
 	QPushButton *pbSimpleMesh;
+	QPushButton *pbLaplacianDef;
 };
