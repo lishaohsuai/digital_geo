@@ -78,6 +78,12 @@ double SimpleMesh::quadric(const Mesh::Point& v, const Eigen::MatrixXd &M_)
 void SimpleMesh::computeQ() {
 	for (Mesh::VertexIter v_it = mesh->vertices_begin(); v_it != mesh->vertices_end(); v_it++) {// 遍历所有点
 		mesh->data(*v_it).Ksum.resize(4, 4);
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				mesh->data(*v_it).Ksum(i, j) = 0;
+			}
+		}
+		//mesh->data(*v_it).Ksum = Eigen::MatrixXd::Zero(4, 4);
 		std::vector<Mesh::Point> v;
 		for (Mesh::VertexVertexIter vv_it = mesh->vv_iter(*v_it); vv_it.is_valid(); vv_it++) { // 某个点的一领域点
 			v.push_back(mesh->point(*vv_it));
@@ -89,20 +95,22 @@ void SimpleMesh::computeQ() {
 			double a, b, c, d;
 			// 计算三个点所形成的平面系数
 			myMeshAlgorithm.calABCD(Point3d(P[0], P[1], P[2]), Point3d(pi[0], pi[1], pi[2]), Point3d(pre[0], pre[1], pre[2]), a, b, c, d); 			
-			Eigen::MatrixXd Kp;
-			Kp.resize(4, 4);
+			Eigen::MatrixXd Kp(4, 4);
 			Kp(0, 0) = a * a;  Kp(0, 1) = a * b;  Kp(0, 2) = a * c;  Kp(0, 3) = a * d;
 			Kp(1, 0) = a * b;  Kp(1, 1) = b * b;  Kp(1, 2) = b * c;  Kp(1, 3) = b * d;
 			Kp(2, 0) = a * c;  Kp(2, 1) = c * b;  Kp(2, 2) = c * c;  Kp(2, 3) = c * d;
 			Kp(3, 0) = a * d;  Kp(3, 1) = d * b;  Kp(3, 2) = d * c;  Kp(3, 3) = d * d;
+			//std::cout << "a b c d " << a << " " << b << " " << c << " " << d << std::endl;
 			mesh->data(*v_it).Ksum += Kp;
 			mesh->data(*v_it).deleted = false;// 都默认没有被删除
 		}
+		//std::cout << "Kp" << std::endl;
+		//std::cout << mesh->data(*v_it).Ksum << std::endl;
 	}// 每个顶点的Kp值已经计算完成
 	// 建堆
 	for (Mesh::VertexIter v_it = mesh->vertices_begin(); v_it != mesh->vertices_end(); v_it++) {
 		for (Mesh::VertexVertexIter vv_it = mesh->vv_iter(*v_it); vv_it.is_valid(); vv_it++) {
-			Eigen::MatrixXd bar_Q;
+			Eigen::MatrixXd bar_Q(4, 4);
 			bar_Q = mesh->data(*v_it).Ksum + mesh->data(*vv_it).Ksum;
 			if (v_it->idx() < vv_it->idx()) {
 				double error = 0;
@@ -111,7 +119,7 @@ void SimpleMesh::computeQ() {
 				ba_Q_back(3, 2) = 0; ba_Q_back(3, 3) = 1;
 				if (ba_Q_back.determinant() != 0) {// 行列式的值 如果不为0的话说明该行列式是可逆的
 					//行列式可逆 计算新的坐标点
-					Eigen::MatrixXd b;
+					Eigen::MatrixXd b(4,1);
 					b << 0,
 						 0,
 						 0,
@@ -148,6 +156,10 @@ void SimpleMesh::computeQ() {
 			}
 		}
 	}
+	int index = 0;
+	for (auto it = heap.begin(); it != heap.end() && index < 10; it++, index++) {
+		std::cout << " heap " << (*(it->v_it)).idx() << " " << (*(it->vv_it)).idx() << " " << it->optimal_pos << " " << it->error << std::endl;
+	}
 }
 
 
@@ -182,8 +194,9 @@ bool SimpleMesh::simpleMesh(QString str) {
 	std::cout << "[DEBUG] updatePoint start\n";
 	while (!heap.empty() && times) {
 		MyPair minCostPair = *(heap.begin());
-		std::cout << "[DEBUG] error" << minCostPair.error << std::endl;
-		std::cout << "[DEBUG] valid" << minCostPair.v_it->is_valid() << " " << minCostPair.vv_it->is_valid() << std::endl;
+		std::cout << mesh->point((*(minCostPair.v_it))) << " " << mesh->point((*(minCostPair.vv_it))) << " " << minCostPair.optimal_pos << " " << minCostPair.error << std::endl;
+		//std::cout << "[DEBUG] error" << minCostPair.error << std::endl;
+		//std::cout << "[DEBUG] valid" << minCostPair.v_it->is_valid() << " " << minCostPair.vv_it->is_valid() << std::endl;
 		mesh->set_point(*minCostPair.v_it, minCostPair.optimal_pos);
 		mesh->set_normal(*minCostPair.v_it, minCostPair.optimal_nrm);
 		mesh->data(*minCostPair.v_it).Ksum += mesh->data(*minCostPair.vv_it).Ksum;
@@ -210,7 +223,7 @@ bool SimpleMesh::simpleMesh(QString str) {
 		for (Mesh::VertexVertexIter vv_it = mesh->vv_iter(*minCostPair.v_it); vv_it.is_valid(); vv_it++) { // 对v_it的1邻域进行判断 看是否能加入堆栈中
 			if (mesh->data(*vv_it).deleted == true)
 				continue;
-			Eigen::MatrixXd bar_Q;
+			Eigen::MatrixXd bar_Q(4, 4);
 			bar_Q = mesh->data(*minCostPair.v_it).Ksum + mesh->data(*vv_it).Ksum;
 			if (minCostPair.v_it->idx() < vv_it->idx()) { // 保持大的在前面
 				double error = 0;
@@ -219,7 +232,7 @@ bool SimpleMesh::simpleMesh(QString str) {
 				ba_Q_back(3, 2) = 0; ba_Q_back(3, 3) = 1;
 				if (ba_Q_back.determinant() != 0) {// 行列式的值 如果不为0的话说明该行列式是可逆的
 					//行列式可逆 计算新的坐标点
-					Eigen::MatrixXd b;
+					Eigen::MatrixXd b(4, 1);
 					b << 0,
 						 0,
 						 0,
@@ -261,7 +274,7 @@ bool SimpleMesh::simpleMesh(QString str) {
 				ba_Q_back(3, 2) = 0; ba_Q_back(3, 3) = 1;
 				if (ba_Q_back.determinant() != 0) {// 行列式的值 如果不为0的话说明该行列式是可逆的
 					//行列式可逆 计算新的坐标点
-					Eigen::MatrixXd b;
+					Eigen::MatrixXd b(4, 1);
 					b << 0,
 						0,
 						0,
@@ -301,7 +314,7 @@ bool SimpleMesh::simpleMesh(QString str) {
 		//deleteOnePoint(minCostPair.vv_it);
 		chooseOneToDel(*minCostPair.vv_it, *minCostPair.v_it);
 		times--;
-		std::cout << " --- \n";
+		//std::cout << " --- \n";
 	}
 	// 删除所有为true的点
 
@@ -327,7 +340,6 @@ bool SimpleMesh::simpleMesh(QString str) {
 	//		}
 	//	}
 	//}
-	std::cout << "[DEBUG] OVER" << std::endl;
 	if (!mesh->has_vertex_status())  mesh->request_vertex_status();
 	if (!mesh->has_face_status())    mesh->request_face_status();
 	if (!mesh->has_edge_status())    mesh->request_edge_status();
@@ -335,6 +347,7 @@ bool SimpleMesh::simpleMesh(QString str) {
 	if (mesh->has_vertex_status())  mesh->release_vertex_status();
 	if (mesh->has_face_status())    mesh->release_face_status();
 	if (mesh->has_edge_status())    mesh->release_edge_status();
+	std::cout << "[DEBUG] OVER" << std::endl;
 	return true;
 }
 
